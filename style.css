@@ -1,0 +1,36 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(129, 129, 129);
+}
+
+.container {
+    width: 300px;
+    margin: 50px auto; 
+    background-color: rgb(102, 98, 102);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(255, 0, 0); 
+
+
+}
+
+input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: rgb(255, 254, 254);
+    color: rgb(255, 0, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: blue;
+}
