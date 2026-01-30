@@ -86,8 +86,9 @@ th {
     display: inline-block;
     margin-top: 20px;
     text-decoration: none;
-    color: blue;
+    color: rgb(250, 17, 17);
     font-weight: bold;
+    
 }
 
 .btn-excluir {
@@ -103,4 +104,14 @@ th {
 .btn-excluir:hover {
     background-color: blue;
     
+}
+
+.btn-editar {
+    background-color: #ec8f02;
+    color: #fffefe;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 5px;
 }
