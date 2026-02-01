@@ -1,117 +1,230 @@
+/* Estilo geral da página */
 body {
+    /* Define a fonte padrão do site */
     font-family: 'Courier New', Courier, monospace;
+
+    /* Cor de fundo da página */
     background-color: cadetblue;
+
+    /* Ativa o Flexbox para alinhar elementos */
     display: flex;
+
+    /* Centraliza horizontalmente o conteúdo */
     justify-content: center;
+
+    /* Espaçamento no topo da página */
     padding-top: 50px;
 }
 
+/* Container principal que envolve o conteúdo */
 .container {
+    /* Cor de fundo do container */
     background-color: white;
+
+    /* Espaçamento interno */
     padding: 30px;
+
+    /* Arredonda os cantos */
     border-radius: 12px;
+
+    /* Sombra ao redor do container */
+    /* OBS: essa linha está incorreta, explico abaixo */
     box-shadow: 0 4px 15px rgba(red, green, blue, alpha);
+
+    /* Faz o container ocupar toda a largura possível */
     width: 100%;
+
+    /* Limita a largura máxima do container */
     max-width: 500%;
+
+    /* Centraliza textos */
     text-align: center;
-
 }
 
-h1, h2 {
+/* Estiliza títulos h1 e h2 */
+h1,
+h2 {
+    /* Cor do texto */
     color: black;
 }
 
+/* Estilo do formulário */
 form {
+    /* Alinha o texto do formulário à esquerda */
     text-align: left;
-
 }
 
+/* Estilo dos rótulos (labels) */
 label {
+    /* Faz o label ocupar uma linha inteira */
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: black;
 
+    /* Espaçamento abaixo do label */
+    margin-bottom: 5px;
+
+    /* Texto em negrito */
+    font-weight: bold;
+
+    /* Cor do texto */
+    color: black;
 }
 
-input{
+/* Estilo dos campos de entrada */
+input {
+    /* Campo ocupa 100% da largura do container */
     width: 100%;
+
+    /* Espaçamento interno do input */
     padding: 10px;
+
+    /* Espaço abaixo de cada campo */
     margin-bottom: 20px;
+
+    /* Borda clara */
     border: 1px solid #ddd;
+
+    /* Arredonda os cantos do input */
     border-radius: 5px;
+
+    /* Evita que padding e borda aumentem o tamanho total */
     box-sizing: border-box;
 }
 
+/* Estilo do botão principal */
 button {
+    /* Ocupa toda a largura */
     width: 100%;
+
+    /* Cor de fundo verde */
     background-color: #28a745;
+
+    /* Cor do texto */
     color: white;
+
+    /* Remove borda padrão */
     border: none;
+
+    /* Espaçamento interno */
     padding: 12px;
+
+    /* Bordas arredondadas */
     border-radius: 5px;
+
+    /* Cursor em formato de mão */
     cursor: pointer;
+
+    /* Tamanho do texto */
     font-size: 16px;
+
+    /* Animação suave ao mudar de estado */
     transition: 0.3s;
-    
 }
 
+/* Efeito ao passar o mouse no botão */
 button:hover {
+    /* OBS: aqui não muda nada porque a cor é a mesma */
     background-color: #28a745;
-
 }
 
-/* Estilo para a lista */
+/* Estilo da tabela (lista de dados) */
 table {
+    /* Ocupa toda a largura do container */
     width: 100%;
-    border-collapse: collapse; 
-    margin-top: 20px;
 
+    /* Remove espaço entre bordas das células */
+    border-collapse: collapse;
+
+    /* Espaçamento acima da tabela */
+    margin-top: 20px;
 }
-th, td {
+
+/* Estilo das células da tabela */
+th,
+td {
+    /* Linha separadora inferior */
     border-bottom: 1px solid #eee;
+
+    /* Espaçamento interno */
     padding: 12px;
+
+    /* Alinhamento do texto */
     text-align: left;
-
 }
 
-
+/* Cabeçalho da tabela */
 th {
+    /* Cor de fundo do cabeçalho */
     background-color: #f8f9fa;
+
+    /* Cor do texto */
     color: black;
-
 }
 
+/* Botão/link de voltar */
 .btn-voltar {
+    /* Permite aplicar margem e padding */
     display: inline-block;
+
+    /* Espaçamento acima */
     margin-top: 20px;
+
+    /* Remove sublinhado do link */
     text-decoration: none;
+
+    /* Cor do texto */
     color: rgb(250, 17, 17);
+
+    /* Texto em negrito */
     font-weight: bold;
-    
 }
 
+/* Botão de excluir */
 .btn-excluir {
+    /* Fundo vermelho */
     background-color: red;
+
+    /* Cor do texto */
     color: aqua;
-    padding: 5px 10px;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 14px;
 
+    /* Espaçamento interno */
+    padding: 5px 10px;
+
+    /* Remove sublinhado */
+    text-decoration: none;
+
+    /* Bordas arredondadas */
+    border-radius: 4px;
+
+    /* Tamanho do texto */
+    font-size: 14px;
 }
 
+/* Hover do botão excluir */
 .btn-excluir:hover {
+    /* Muda a cor ao passar o mouse */
     background-color: blue;
-    
 }
 
+/* Botão de editar */
 .btn-editar {
+    /* Cor de fundo laranja */
     background-color: #ec8f02;
+
+    /* Cor do texto */
     color: #fffefe;
+
+    /* Espaçamento interno */
     padding: 5px 10px;
+
+    /* Remove sublinhado */
     text-decoration: none;
+
+    /* Bordas arredondadas */
     border-radius: 4px;
+
+    /* Tamanho do texto */
     font-size: 14px;
+
+    /* Espaço à direita entre botões */
     margin-right: 5px;
 }

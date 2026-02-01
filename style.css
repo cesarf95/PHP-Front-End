@@ -1,36 +1,73 @@
+/* Estiliza todo o corpo da página */
 body {
+    /* Define a fonte padrão do site como Courier New (fonte monoespaçada) */
     font-family: 'Courier New', Courier, monospace;
+
+    /* Define a cor de fundo da página (cinza médio) */
     background-color: rgb(129, 129, 129);
 }
 
+/* Estiliza o container principal (geralmente um formulário ou card) */
 .container {
+    /* Define a largura fixa do container */
     width: 300px;
-    margin: 50px auto; 
+
+    /* Centraliza horizontalmente e adiciona espaço no topo (50px) */
+    margin: 50px auto;
+
+    /* Define a cor de fundo do container */
     background-color: rgb(102, 98, 102);
+
+    /* Espaçamento interno entre a borda e o conteúdo */
     padding: 20px;
+
+    /* Arredonda os cantos do container */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgb(255, 0, 0); 
 
-
+    /* Cria uma sombra ao redor do container */
+    /* 0 0 10px = deslocamento horizontal, vertical e desfoque */
+    /* rgb(255, 0, 0) = cor vermelha da sombra */
+    box-shadow: 0 0 10px rgb(255, 0, 0);
 }
 
+/* Estiliza todos os campos de entrada (input) */
 input {
+    /* Faz o input ocupar 100% da largura do container */
     width: 100%;
+
+    /* Espaço abaixo de cada input */
     margin-bottom: 15px;
+
+    /* Espaçamento interno do campo (onde o usuário digita) */
     padding: 8px;
+
+    /* Inclui padding e borda no cálculo da largura total */
     box-sizing: border-box;
 }
 
+/* Estiliza todos os botões */
 button {
+    /* Botão ocupa toda a largura do container */
     width: 100%;
-    background-color: rgb(255, 254, 254);
-    color: rgb(255, 0, 0);
-    border: none;
-    padding: 10px;
-    cursor: pointer;
 
+    /* Cor de fundo do botão */
+    background-color: rgb(255, 254, 254);
+
+    /* Cor do texto do botão */
+    color: rgb(255, 0, 0);
+
+    /* Remove a borda padrão do navegador */
+    border: none;
+
+    /* Espaçamento interno do botão */
+    padding: 10px;
+
+    /* Muda o cursor para a mãozinha ao passar o mouse */
+    cursor: pointer;
 }
 
+/* Estilo aplicado quando o mouse passa por cima do botão */
 button:hover {
+    /* Altera a cor de fundo do botão ao passar o mouse */
     background-color: blue;
 }
